@@ -10,6 +10,9 @@ import axios from "axios";
 //   esporto un metodo chiamato getEvents
  export default {
      getEvents(){
-         return apiClient.get('/events')
-     }
+         return apiClient.get('/events');
+     },
+    getEvent(id){
+         return apiClient.get('/events/'+id);
+     },
  }
